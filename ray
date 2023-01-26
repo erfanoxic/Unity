@@ -1,0 +1,6 @@
+void Update()
+    {
+        Enemy enemy = GetComponent<Enemy>();
+        RaycastHit hitInfo;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        bool hasHit = Physics.Raycast(ray, out hitInfo);
